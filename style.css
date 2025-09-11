@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e6f0fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+.input-container button:hover {
+  background: #0056b3;
+}
+
+.listas {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.listas div {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.listas h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li.concluida span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Ações dos botões */
+li .btn-acoes {
+  display: flex;
+  gap: 8px;
+}
+
+li button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+/* Concluir */
+li .btn-concluir {
+  background: #28a745;
+}
+li .btn-concluir:hover {
+  background: #1e7e34;
+}
+
+/* Editar */
+li .btn-editar {
+  background: #007bff;
+}
+li .btn-editar:hover {
+  background: #0056b3;
+}
+
+/* Excluir */
+li .btn-excluir {
+  background: #dc3545;
+}
+li .btn-excluir:hover {
+  background: #a71d2a;
+}
+
+/* Salvar edição */
+li .btn-salvar {
+  background: #17a2b8;
+}
+li .btn-salvar:hover {
+  background: #117a8b;
+}
+
+li input[type="text"] {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filtros {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filtros span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filtros button {
+  margin: 0 5px;
+  background: #28a745;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.filtros button:hover {
+  background: #1e7e34;
+} 

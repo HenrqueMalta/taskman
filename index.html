@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <div class="input-container">
+      <input type="text" id="novaTarefa" placeholder="Digite sua tarefa...">
+      <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+
+    <div class="listas">
+      <div class="pendentes">
+        <h2>Tarefas Pendentes</h2>
+        <ul id="listaPendentes"></ul>
+      </div>
+
+      <div class="concluidas">
+        <h2>Tarefas Concluídas</h2>
+        <ul id="listaConcluidas"></ul>
+      </div>
+    </div>
+
+    <div class="filtros">
+      <span>Mostrar:</span>
+      <button onclick="mostrarTodas()">Todas</button>
+      <button onclick="mostrarPendentes()">Pendentes</button>
+      <button onclick="mostrarConcluidas()">Concluídas</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
